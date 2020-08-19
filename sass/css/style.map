@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"$preto: rgb(211, 59, 59);\r\n$primart: rgb(109, 109, 165);\r\ndiv{\r\n    background: $preto;\r\n    a {\r\n        text-decoration: none;\r\n    }\r\n    p{\r\n        font-size: 2rem;\r\n    }\r\n}\r\n\r\nform{\r\n    background-color: $primart;\r\n    button{\r\n        border-radius: 1.2rem;\r\n    }\r\n}"
+	],
+	"names": [],
+	"mappings": ";AAEA,AAAA,GAAG,CAAA;EACC,UAAU,EAHN,OAAgB,GAUvB;;EARD,AAEI,GAFD,CAEC,CAAC,CAAC;IACE,eAAe,EAAE,IAAI,GACxB;;EAJL,AAKI,GALD,CAKC,CAAC,CAAA;IACG,SAAS,EAAE,IAAI,GAClB;;;AAGL,AAAA,IAAI,CAAA;EACA,gBAAgB,EAZV,OAAkB,GAgB3B;;EALD,AAEI,IAFA,CAEA,MAAM,CAAA;IACF,aAAa,EAAE,MAAM,GACxB"
+}
