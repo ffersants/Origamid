@@ -52,11 +52,18 @@ os difere:
 <h3>Import :white_flag:</h3> 
 Esse recurso oferece a possibilidade de, a partir do arquivo SASS, importar outros arquivos CSS que serão compilados em um único CSS.<br>
 O próprio CSS também oferece esse recurso:
-```java
+<pre>
 @import "meuOutro.css"
 html, body{
    margin: 0;
    padding: 0;
 }
 ...
-```
+</pre>
+O exemplo acima é equivalente a especificar no HTML, mais de uma tag de importação de arquivos CSS.
+<pre>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/meuOutro.css">
+</pre>
+
+O ruim desta prática no CSS, é que ela exige a importação de mais de um CSS
