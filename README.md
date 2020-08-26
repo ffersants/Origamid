@@ -48,3 +48,15 @@ os difere:
     }  
   }
 </pre>
+
+<h3>Import :white_flag:</h3> 
+Esse recurso oferece a possibilidade de, a partir do arquivo SASS, importar outros arquivos CSS que serão compilados em um único CSS.<br>
+O próprio CSS também oferece esse recurso:
+```css
+@import "meuOutro.css"
+html, body{
+   margin: 0;
+   padding: 0;
+}
+...
+```
