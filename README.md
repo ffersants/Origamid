@@ -62,13 +62,13 @@ html, body{
 </pre>
 O exemplo acima é equivalente a especificar no HTML, mais de uma tag de importação de arquivos CSS.
 
-" <link rel="stylesheet" href="css/style.css"> "
-" <link rel="stylesheet" href="css/meuOutro.css"> " 
+<h5><link rel="stylesheet" href="css/style.css"> 
+<link rel="stylesheet" href="css/meuOutro.css"></h5>
 
 - O ruim desta prática no CSS é que ela exige a importação de mais de um CSS, realizando mais de um request ao servidor e impactando na renderização da página.<br>
 
 Portanto, é melhor realizar o import do SCSS: 
 <pre>@import "outroStyle";</pre> 
 <br>
-É fundamental que o arquivo SCSS importado tenha o underline como primeiro caractere, por exemplo <strong>_outroStyle.scss</strong>, pois isso faz com que não seja criado um arquivo outroStyle.css, mas que somente o conteúdo do _outroStyle.scss seja somente importado no arquivo principal que possui @import "outroStyle"
+É fundamental que o arquivo SCSS importado tenha o underline como primeiro caractere, por exemplo <strong>_outroStyle.scss</strong>, pois isso faz com que não seja criado um arquivo outroStyle.css, mas que somente o conteúdo do "_outroStyle.scss" seja somente importado no arquivo principal que possui @import "outroStyle"
 
