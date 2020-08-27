@@ -62,9 +62,11 @@ html, body{
 </pre>
 O exemplo acima é equivalente a especificar no HTML, mais de uma tag de importação de arquivos CSS.
 
-<h5><link rel="stylesheet" href="css/style.css"> 
-<link rel="stylesheet" href="css/meuOutro.css"></h5>
-
+<pre>
+<link rel="stylesheet" href="css/style.css"> 
+<link rel="stylesheet" href="css/meuOutro.css">
+</pre>
+<br>
 - O ruim desta prática no CSS é que ela exige a importação de mais de um CSS, realizando mais de um request ao servidor e impactando na renderização da página.<br>
 
 Portanto, é melhor realizar o import do SCSS: 
