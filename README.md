@@ -65,6 +65,5 @@ O exemplo acima é equivalente a especificar no HTML, mais de uma tag de importa
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/meuOutro.css">
 
-<div class="text-purple">
-O ruim desta prática no CSS, é que ela exige a importação de mais de um CSS
-</div>
+- O ruim desta prática no CSS, é que ela exige a importação de mais de um CSS
+
