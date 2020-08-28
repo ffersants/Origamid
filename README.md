@@ -66,11 +66,10 @@ O exemplo acima é equivalente a especificar no HTML, mais de uma tag de importa
 <link rel="stylesheet" href="css/style.css"> 
 <link rel="stylesheet" href="css/meuOutro.css">
 ```
-<br>
 O ruim de importação de mais de um CSS, é a realização de um request ao servidor por cada arquivo importado, o que impactando na renderização da página.<br>
 
 Portanto, é melhor realizar o import pelo SCSS: 
 <pre>@import "outroStyle";</pre> 
-<br>
+
 É fundamental que o arquivo SCSS importado tenha o underline como primeiro caractere, por exemplo <strong>_outroStyle.scss</strong>, pois isso faz com que não seja criado um arquivo outroStyle.css, mas que somente o conteúdo do "_outroStyle.scss" seja somente importado no arquivo principal que possui @import "outroStyle", importando todo o código para dentro de um único CSS que é linkado no HTML.
 
