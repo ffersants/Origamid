@@ -7,7 +7,15 @@ const App = () => {
     return(
         <>
             <h1>Esse é o App!</h1>
-            <button onClick={() => setModal(true)}>Abrir modal</button>
+            <button onClick={setModal(
+                () => {
+                    if(showModal){
+                        return false
+                    } else if(!showModal){
+                        return true
+                    }
+                }
+            )}>Abrir modal</button>
             <Modal showModal={showModal} setModal={setModal}/>
         </>
     )
