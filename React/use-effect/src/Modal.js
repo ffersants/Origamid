@@ -4,8 +4,8 @@ const Modal = (props) => {
     if(props.showModal){
         return(
             <div>
-                <h1>Mostrando modal</h1>
-                <button onClick={() => props.setModal(false)}>Fechar</button>
+                <h1>Showing modal</h1>
+                <button onClick={() => props.setModal(false)}>Close</button>
             </div>
         )
     }else {
