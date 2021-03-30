@@ -1,7 +1,7 @@
 import React from 'react'
 
-const Mirror = () => {
-    return <p>Mirror: </p>
+const Mirror = ({count} ) => {
+    return <p>Mirror: {count}</p>
 }
 
 export default Mirror
