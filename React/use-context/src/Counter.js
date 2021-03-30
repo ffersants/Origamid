@@ -1,13 +1,16 @@
 import React from 'react'
+import CounterContext from './CounterContext.js'
 
 function Counter() {
 
-  let [count, setCount] = React.useState(0)
+  let CounterComponentContext = React.useContext(CounterContext)
+
 
   return (
     <div className="App">
-      Counting: {count}
-      <button onClick={() => setCount(count+=1)}>Increase</button>
+      <p>Test</p>
+      Counting: {CounterComponentContext.total}
+      {/* <button onClick={() => setCount(count+=1)}>Increase</button> */}
     </div>
   );
 }
