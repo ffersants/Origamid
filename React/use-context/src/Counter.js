@@ -1,16 +1,17 @@
 import React from 'react'
-import CounterContext from './CounterContext.js'
+import {CounterContext} from './CounterContext.js'
 
 function Counter() {
-  let CounterComponentContext = React.useContext(CounterContext)
+
+  let {total, setTotal} = React.useContext(CounterContext )
 
   return (
-    <div className="App">
-      Counting: {CounterComponentContext.total}
-      <button onClick={() => CounterComponentContext.setTotal(CounterComponentContext.total+=1)}>
-        Increase
-      </button>
-    </div>
+      <div className="App">
+        Counting: {total}
+        <button onClick={() => setTotal(total+=1)}>
+          Increase
+        </button>
+      </div>
   );
 }
 

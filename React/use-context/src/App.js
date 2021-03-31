@@ -1,19 +1,17 @@
 import React from 'react'
 
-import CounterContext from './CounterContext.js'
 import Counter from './Counter.js';
 import Mirror from './Mirror.js'
 
+import {CounterContextProvider} from './CounterContext.js'
+
 const App = () => {
-
-    let [total, setTotal] = React.useState(0)
-
     return (
         <>
-            <CounterContext.Provider value={{total, setTotal}}>
+            <CounterContextProvider>
                 <Counter />
                 <Mirror />
-            </CounterContext.Provider>
+            </CounterContextProvider>
         </>
     )
 }
